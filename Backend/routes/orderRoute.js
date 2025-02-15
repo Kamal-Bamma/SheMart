@@ -21,6 +21,6 @@ orderRouter.post("/place", authUser, placeOrder);
 orderRouter.post("/khalti", authUser, placeOrderKhalti);
 
 // User features
-orderRouter.post("/userorders", authUser, userOrders);
+orderRouter.get("/userorders", authUser, userOrders);
 
 export default orderRouter;
